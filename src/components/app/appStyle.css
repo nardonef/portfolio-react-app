@@ -1,0 +1,41 @@
+.primaryButton {
+    background-color: green;
+}
+
+.mainDiv {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(-90deg, #C1EEFF, #A288E3);
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1fr 2.5fr 1fr 2.5fr 2.5fr;
+    grid-template-rows: 2fr .5fr .5fr .5fr 2fr;
+}
+
+.name {
+    font-family: Athelas;
+    font-weight: bolder;
+    font-size: 4.5vw;
+    text-align: center;
+    align-self: end;
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+}
+
+.dev {
+    font-family: Athelas;
+    font-weight: bolder;
+    font-size: 4.5vw;
+    align-self: center;
+    grid-row: 3 / 4;
+    grid-column: 4 / 6;
+}
+
+.des {
+    font-family: Athelas;
+    font-weight: bolder;
+    font-size: 4.5vw;
+    grid-row: 4 / 5;
+    grid-column: 5 / 7;
+}
