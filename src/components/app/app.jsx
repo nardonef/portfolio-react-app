@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import style from './appStyle.css'
-import LandingPage from '../landingPage/mainText/text'
+import LandingPage from '../landingPage/landingPageContainer'
+import NavBar from '../navBar/navBar'
+import 'font-awesome/css/font-awesome.css';
 
 /**
  * App
@@ -17,12 +19,10 @@ class App extends Component {
      * @return {*}
      */
     render() {
-
         return (
             <div className={style.mainDiv}>
-                <LandingPage class={style.name} text={'FRANK NARDONE'}/>
-                <LandingPage class={style.dev} text={'DEVELOPER'}/>
-                <LandingPage class={style.des} text={'DESIGNER'}/>
+                <NavBar/>
+                <LandingPage/>
             </div>
         )
     }
