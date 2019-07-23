@@ -18,7 +18,7 @@ class App extends Component {
     render() {
         return (
             <div className={this.props.class}>
-                {this.props.text}
+                <span className={this.props.class}>{this.props.text}</span>
             </div>
         )
     }

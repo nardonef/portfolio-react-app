@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import style from './landingPageContainerStyle.css'
 import LandingPageText from '../landingPage/mainText/text'
+import Icons from './icons/icons'
 
 /**
  * App
@@ -20,9 +21,13 @@ class LandingPageContainer extends Component {
 
         return (
             <div className={style.mainDiv}>
-                <LandingPage class={style.name} text={'FRANK NARDONE'}/>
-                <LandingPage class={style.dev} text={'DEVELOPER'}/>
-                <LandingPage class={style.des} text={'DESIGNER'}/>
+                <LandingPageText class={style.name} text={'FRANK NARDONE'}/>
+                <div className={style.devdesDiv}>
+                    <LandingPageText class={style.dev} text={'DEVELOPER'}/>
+                    <LandingPageText class={style.and} text={'&'}/>
+                    <LandingPageText class={style.des} text={'DESIGNER'}/>
+                </div>
+                <Icons/>
             </div>
         )
     }
