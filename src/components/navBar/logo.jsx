@@ -27,9 +27,9 @@ class Logo extends Component {
     render() {
         const hoverClass = this.state.isHovered ? style.logo : '';
         return (
-            <a className={style.logo} href="#">
-                <span className={style.firstname}>Frank</span>
-                <span className={style.lastname}>Nardone</span>
+            <a className={'logo'} href="#">
+                <span className='logoFirstName'>Frank</span>
+                <span className='logoLastName'>Nardone</span>
             </a>
         )
     }

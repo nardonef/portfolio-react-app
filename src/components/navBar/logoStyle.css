@@ -7,18 +7,18 @@
     text-decoration: none;
 }
 
-.firstname {
+.logoFirstName {
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.firstname:hover {
+.logoFirstName:hover {
     font-weight: normal;
     color: #F05557 !important;
 }
 
 
-.lastname {
+.logoLastName {
     margin-left: 1px;
     margin-right: auto;
 }

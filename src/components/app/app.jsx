@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import style from './appStyle.css'
-import LandingPage from '../landingPage/landingPageContainer'
 import NavBar from '../navBar/navBar'
 import 'font-awesome/css/font-awesome.css';
+import { BrowserRouter } from 'react-router-dom';
+import Router from '../router/router';
+import style from './appStyle.css';
 
 /**
  * App
@@ -20,9 +21,11 @@ class App extends Component {
      */
     render() {
         return (
-            <div className={style.mainDiv}>
-                <NavBar/>
-                <LandingPage/>
+            <div className='application'>
+                <BrowserRouter>
+                    <NavBar/>
+                    <Router/>
+                </BrowserRouter>
             </div>
         )
     }

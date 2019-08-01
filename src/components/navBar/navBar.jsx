@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import style from './navBarStyle.css'
-import Logo from './logo'
+import './navBarStyle.css'
+import { Link } from "react-router-dom";
 
 /**
  * NavBar
@@ -18,14 +18,14 @@ class NavBar extends Component {
      */
     render() {
         return (
-            <nav className={style.navbar} role="navigation">
-                        <ul className={style.navList}>
-                            <Logo/>
-                            <li className={style.listItems}><a className={style.links}>Home</a></li>
-                            <li className={style.listItems}><a className={style.links}>Portfolio</a></li>
-                            <li className={style.listItems}><a className={style.links}>About Me</a></li>
-                            <li className={style.listItems}><a className={style.links}>Contact</a></li>
-                        </ul>
+            <nav className='navbar' role="navigation">
+                <ul className='navList'>
+                    {/*<Logo/>*/}
+                    <li className='navListItems'><Link to={'/'} className='navLinks'>Home</Link></li>
+                    <li className='navListItems'><Link to={'/portfolio'} className='navLinks'>Portfolio</Link></li>
+                    <li className='navListItems'><Link to={'/aboutme'} className='navLinks'>About Me</Link></li>
+                    <li className='navListItems'><Link to={'/contact'} className='navLinks'>Contact</Link></li>
+                </ul>
             </nav>
         )
     }
