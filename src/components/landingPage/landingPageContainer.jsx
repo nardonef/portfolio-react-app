@@ -6,31 +6,22 @@ import Icons from './icons/icons'
 /**
  * App
  */
-class LandingPageContainer extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
+function LandingPageContainer() {
     /**
      * Render the application
      * @return {*}
      */
-    render() {
-
-        return (
-            <div className={style.mainDiv}>
-                <LandingPageText class={style.name} text={'FRANK NARDONE'}/>
-                <div className={style.devdesDiv}>
-                    <LandingPageText class={style.dev} text={'DEVELOPER'}/>
-                    <LandingPageText class={style.and} text={'&'}/>
-                    <LandingPageText class={style.des} text={'DESIGNER'}/>
-                </div>
-                <Icons/>
+    return (
+        <div className='landingPage'>
+            <LandingPageText class='frankNardone' text={'FRANK NARDONE'}/>
+            <div className='devdesDiv'>
+                <LandingPageText class={'dev'} text={'DEVELOPER'}/>
+                <LandingPageText class={'and'} text={'&'}/>
+                <LandingPageText class={'des'} text={'DESIGNER'}/>
             </div>
-        )
-    }
+            <Icons/>
+        </div>
+    )
 }
 
 export default LandingPageContainer;

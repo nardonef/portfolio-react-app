@@ -1,8 +1,4 @@
-.primaryButton {
-    background-color: green;
-}
-
-.mainDiv {
+.application {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -16,7 +12,7 @@
 }
 
 @media only screen and (max-width: 600px){
-    .mainDiv {
+    .application {
         grid-template-columns: 1fr 21rem 1fr;
         grid-template-rows: 3.2rem 9rem 10rem;
     }

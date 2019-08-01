@@ -9,7 +9,6 @@ class LandingPageContainer extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
     }
 
     /**
@@ -19,11 +18,11 @@ class LandingPageContainer extends Component {
     render() {
 
         return (
-            <div className={style.mainDiv}>
-                <Icon className={style.item} name={'facebook'} href={'www.google.com'}/>
-                <Icon className={style.item} name={'twitter'}/>
-                <Icon className={style.item} name={'github'}/>
-                <Icon className={style.item} name={'linkedin'}/>
+            <div className='icon'>
+                <Icon className='iconItem' name={'facebook'} href={'www.google.com'}/>
+                <Icon className='iconItem' name={'twitter'}/>
+                <Icon className='iconItem' name={'github'}/>
+                <Icon className='iconItem' name={'linkedin'}/>
             </div>
         )
     }
